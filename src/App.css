@@ -1,0 +1,96 @@
+.App{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  overflow:hidden;
+}
+.App-header{
+  width:100%;
+  height:.4rem;
+  text-align:center;
+  line-height:.4rem;
+  border-bottom:.01rem solid #ccc;
+}
+.App .App-content{
+  flex:1;
+  overflow:hidden;
+  overflow-y:scroll;
+  display:flex;
+  /* position:relative */
+}
+.side{
+  width:22%;
+  overflow:hidden;
+}
+.activeIndex{
+  background:skyblue;
+}
+.App-content .App-section{
+  width:76%;
+  height:100%;
+  overflow:hidden;
+  /* overflow-y:scroll; */
+  border-left:.01rem solid #ccc;
+}
+.App-content .App-section h6{
+  width:100%;
+  line-height:.3rem;
+  padding:0 .1rem;
+  border-bottom:.01rem solid #ccc;
+}
+.side p{
+  /* padding:.1rem; */
+  width:100%;
+  height:.5rem;
+  line-height:.4rem;
+  text-align:center;
+  border-bottom: .01rem solid #ccc;
+}
+.App-foot{
+  width:100%;
+  height:.44rem;
+  text-align:center;
+  line-height:.44rem;
+  border-top:.01rem solid #ccc;
+  background:skyblue;
+  display:flex;
+  justify-content:space-between;
+  padding-left:.2rem;
+}
+.App-foot p{
+  background:rgba(28, 243, 28, 0.582);
+  padding:0 .2rem;
+}
+.mark{
+  display:none;
+  position:fixed;
+  top:.4rem;
+  bottom:.44rem;
+  width:100%;
+  background:rgba(0,0,0,.9);
+  z-index:999;
+} 
+.active{
+  display:block;
+}
+.mark .cart-list{
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+}
+.cart-list li{
+  width:100%;
+  height:.4rem;
+  line-height:.4rem;
+  display:flex;
+  justify-content:space-between;
+  border-bottom:.01rem solid #ccc;
+  background:#fff;
+  padding:0 .2rem;
+}
+.cart-list li span{
+  width:1.2rem;
+  text-align:center;
+}
